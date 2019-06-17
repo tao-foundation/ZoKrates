@@ -1,3 +1,17 @@
+# 2019-06-17 updates
+install ubuntu 18.04 and WSL.
+
+```
+sudo apt install curl git make cargo
+curl https://sh.rustup.rs -sSf | RUSTUP_INIT_SKIP_PATH_CHECK=yes sh
+rustup update
+# cargo +nightly with error then
+rustup toolchain install nightly 
+rustup default nightly
+# to use nightly toolchain by default, at which point you can omit +nightly from all commands
+```
+
+#----
 
 <img src="http://www.redaktion.tu-berlin.de/fileadmin/fg308/icons/projekte/logos/ZoKrates_logo.svg" width="100%" height="180">
 
